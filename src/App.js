@@ -1,28 +1,22 @@
-import './App.css';
+import Nav from "./Nav";
+// import SlidingInterval from "./SlidingInterval";
+import Gallery from "./Gallery";
+import Heroimg from "./Heroimg";
+import Card from "./Card"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
+   <>
+      <div className="bg-[#E9EAEC]">
+        <Nav />
+        <Heroimg/>
+        <div className="middle mx-auto p-5">
+          <Card/>
+          <Gallery/>
+        </div>
+      </div>
+   </>
   );
 }
 
