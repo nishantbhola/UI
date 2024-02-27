@@ -1,0 +1,41 @@
+@font-face {
+    font-family: thermite;
+    src: url(./FontsFree-Net-Thermite.ttf);
+}
+
+.cus::before {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    position: absolute;
+    left: -40px;
+    top:0;
+    border-top-right-radius: 50px;
+    box-shadow: 10px -10px 0 10px #E9EAEC;
+}
+
+.cus::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    position: absolute;
+    top:0;
+    right: -40px;
+    border-top-left-radius: 50px;
+    box-shadow: -10px -10px 0 10px #E9EAEC;
+}
+
+.cus{
+    font-family: thermite;
+}
+
+.yourImage{
+    mix-blend-mode: multiply;
+}
+
+
+.hero {
+    background: rgba(0, 0, 0, 0.5) url("./webui.jpg") no-repeat center / cover;
+}
